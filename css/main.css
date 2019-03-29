@@ -233,7 +233,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .homeImg{
-  background-image: url(../img/nyc.JPG);
+  background-image: url(../img/nyc3.JPG);
   background-attachment: fixed;
 }
 .homeLogo{
@@ -265,15 +265,21 @@ nav ul li a:hover {
   background-image: url(../img/topPageImages/aboutColor3.svg);
   background-attachment: fixed;
 }
-
+.carousel-inner .item img {
+  margin: 0 auto;
+}
 /*Slides for About Page*/
 .slide1{
-  background-image: url(../img/about/TZheadshot.jpg);
-  height: 80vh;
+  background-image: url(../img/about/TZFence.jpg);
+  height: 90vh;
 }
 .slide2{
+  background-image: url(../img/about/TZHeadshot.jpg);
+  height: 90vh;
+}
+.slide3{
   background-image: url(../img/about/TZfriends.JPG);
-  height: 80vh;
+  height: 90vh;
 }
 /*Slides for Ation Icon Logos*/
 .slide4{
