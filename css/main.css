@@ -119,6 +119,9 @@ textarea {
 .font3{
   font-family: 'Prosto One', cursive;
 }
+.size1{
+  font-size: 5vh;
+}
 .align1{
   width: 80%;
   padding-top: 10px;
@@ -138,6 +141,17 @@ textarea {
 .logoForm2{
   width: 35px;
 }
+.logoForm3{
+  width: 45vh;
+}
+.logoForm4{
+  width: 65vh;
+}
+/*Footer*/
+.logoForm4{
+  width: 20vh;
+}
+
 
 
 body{
@@ -182,7 +196,8 @@ a:link {
   color: white;
   margin-right: 2vh;
   padding-left: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prosto One', cursive;
+  font-size: 1.8vh;
 }
 .navbar-light .navbar-nav .nav-link:hover{
   color: white;
@@ -233,7 +248,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .homeImg{
-  background-image: url(../img/nyc3.JPG);
+  background-image: url(../img/nyc8.JPG);
   background-attachment: fixed;
 }
 .homeLogo{
@@ -251,7 +266,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 5%;
+    padding-right: 3%;
 }
 .galleryColor{
   background-image: url(../img/topPageImages/galleryColor3.svg);
@@ -271,15 +286,15 @@ nav ul li a:hover {
 /*Slides for About Page*/
 .slide1{
   background-image: url(../img/about/TZFence.jpg);
-  height: 90vh;
+  height: 80vh;
 }
 .slide2{
   background-image: url(../img/about/TZHeadshot.jpg);
-  height: 90vh;
+  height: 80vh;
 }
 .slide3{
-  background-image: url(../img/about/TZfriends.JPG);
-  height: 90vh;
+  background-image: url(../img/about/TZTeddy.JPG);
+  height: 80vh;
 }
 /*Slides for Ation Icon Logos*/
 .slide4{
@@ -447,7 +462,7 @@ nav ul li a:hover {
 footer{
   background-color: #141414;
   width: 100%;
-  height: 10vh;
+  height: 40vh;
   padding: 0;
   display: flex;
   justify-content: center;
