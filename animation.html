@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div class="nav-wrapper nav-bg navTransition" id="nav">
+    <div class="nav-wrapper nav-bg navTransition" id="nav">
     <div class="container">
       <nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center">
         <a href="index.html" class="navbar-brand"><img src="img/TZLogo.svg"></a>
@@ -38,10 +38,10 @@
         <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-             <ul class="navbar-nav ml-auto">
-                <li class="navbar-item">
-                    <a href="gallery.html" class="nav-link">Gallery</a>
+        <div class="collapse navbar-collapse nav-wrap" id="navbarCollapse">
+             <ul class="navbar-nav ml-auto group" id="example-one">
+                <li class="navbar-item current_page_item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
                 </li>
                 <li class="navbar-item">
                     <a href="contact.html" class="nav-link">Contact</a>
@@ -104,7 +104,7 @@
 
   <a href="#" class="scrollToTop"><img class="mr-3 logoForm2" src="img/media/upArrow.svg"></a>
 
- <footer>
+ <footer class="galleryFoot">
     <div class="wrapper">
       <div class="container">
         <div class="row">
@@ -195,6 +195,35 @@
         }, 1500);
     });
   </script>
-
+  <script>
+    $(function() {
+        var $el, leftPos, newWidth,
+            $mainNav = $("#example-one");
+        
+        $mainNav.append("<li id='magic-line'></li>");
+        var $magicLine = $("#magic-line");
+        
+        $magicLine
+            .width($(".current_page_item").width())
+            .css("left", $(".current_page_item a").position().left)
+            .data("origLeft", $magicLine.position().left)
+            .data("origWidth", $magicLine.width());
+            
+        $("#example-one li a").hover(function() {
+            $el = $(this);
+            leftPos = $el.position().left;
+            newWidth = $el.parent().width();
+            $magicLine.stop().animate({
+                left: leftPos,
+                width: newWidth
+            });
+        }, function() {
+            $magicLine.stop().animate({
+                left: $magicLine.data("origLeft"),
+                width: $magicLine.data("origWidth")
+            });    
+        });
+    });
+  </script>
 
 </html>

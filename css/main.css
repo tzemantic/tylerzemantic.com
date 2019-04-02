@@ -147,7 +147,7 @@ textarea {
 .logoForm4{
   width: 65vh;
 }
-/*Footer*/
+/*Footer TZ Logo*/
 .logoForm4{
   width: 20vh;
 }
@@ -159,6 +159,9 @@ body{
 }
 a:link {
   text-decoration: none;
+}
+h3{
+  font-family: 'Prosto One', cursive;
 }
 
 /*NavBar*/
@@ -199,20 +202,32 @@ a:link {
   font-family: 'Prosto One', cursive;
   font-size: 1.8vh;
 }
-.navbar-light .navbar-nav .nav-link:hover{
-  color: white;
-  background-color: #161616;
-}
+
 .navbar{
   padding: 0;
   margin-top: 2px;
 }
+#magic-line {
+  position: absolute; 
+  height: 3px; 
+  width: 60px !important;
+  margin-left: 3px;
+  background: white;  
+}
 
+
+/*nav ul li a.active{
+  border-bottom: 4px solid white;
+  border-radius: 5px;
+}
+
+/*
 nav ul li a:hover {
   border-radius: 3px;
   transition: all 0.2s ease;
-  transform: scale(1.1);
+  transform: scale(1.1);*
 }
+*/
 @keyframes fade {
   0% {
     background-color: 0, 0, 0, 0;
@@ -279,6 +294,18 @@ nav ul li a:hover {
 .aboutColor{
   background-image: url(../img/topPageImages/aboutColor3.svg);
   background-attachment: fixed;
+}
+.galleryFoot{
+ background: rgb(43,183,148);
+ background: linear-gradient(0deg, rgba(43,183,148,1) 25%, rgba(0,173,255,1) 100%);
+}
+.contactFoot{
+  background: rgb(246,146,30);
+  background: linear-gradient(0deg, rgba(246,146,30,1) 0%, rgba(240,99,81,1) 63%);
+}
+.aboutFoot{
+  background: rgb(227,56,44);
+  background: linear-gradient(0deg, rgba(227,56,44,1) 0%, rgba(240,100,112,1) 84%);
 }
 .carousel-inner .item img {
   margin: 0 auto;
@@ -388,6 +415,7 @@ nav ul li a:hover {
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 10px;
+
 }
 
 .contentBtn:hover {
@@ -402,7 +430,6 @@ nav ul li a:hover {
   border-radius: 3px;
   font-size: 5vh;
   padding: 30px;
- 
   margin-top: 10px;
 }
 
@@ -463,6 +490,7 @@ nav ul li a:hover {
 }
 /*For Smooth Scrolling in footer logo*/
 
+
 footer{
   background-color: #141414;
   width: 100%;
@@ -489,18 +517,7 @@ footer img:hover{
 }
 
 /*For Mobile Phones*/
-@media screen and (max-width: 700px){
-  .slide1{
-    background-attachment: initial;
-
-  }
-  .slide2{
-    background-attachment: initial;
-  }
-  .slide3{
-    background-attachment: initial;
-  }
-  
+@media screen and (max-width: 700px){ 
   .homeLogo{
     width: 40vh;
   }

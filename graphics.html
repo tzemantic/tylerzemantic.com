@@ -38,10 +38,10 @@
         <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-             <ul class="navbar-nav ml-auto">
-                <li class="navbar-item">
-                    <a href="gallery.html" class="nav-link">Gallery</a>
+        <div class="collapse navbar-collapse nav-wrap" id="navbarCollapse">
+             <ul class="navbar-nav ml-auto group" id="example-one">
+                <li class="navbar-item current_page_item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
                 </li>
                 <li class="navbar-item">
                     <a href="contact.html" class="nav-link">Contact</a>
@@ -69,7 +69,7 @@
             <div class="thumbnail">
               <img class="img-fluid" src="img/graphics/samuelJ.gif">
               <div class="details">
-                <h3 class="contentTxtH pad">Say What Again?!</h3>
+                <h3 class="">Say What Again?!</h3>
                 <p class="align1">Pulp Fiction has always been one of my favorite movies, so I had to do a piece with the one and only Samuel Jackson. This piece was done completely in Adobe Illustrator mainly using the pen tool.</p>
                 <a href="img/graphics/samuelJ.gif"><h3 class="contentBtn">View</h3></a>
               </div>
@@ -79,7 +79,7 @@
             <div class="thumbnail">
               <img class="img-fluid" src="img/graphics/JimiH.svg">
               <div class="details">
-                <h3 class="contentTxtH pad">Jimi Hendrix typography</h3>
+                <h3 class="">Jimi Hendrix typography</h3>
                 <p class="align1">Jimi Hendrix along with Jimmy Page are my two favorite Guitarists. The Page piece is on its way, but I hope you enjoy this typography piece. This was done in Adobe Illustrator utilizing the warp tools</p>
                 <a href="img/graphics/JimiH.svg"><h3 class="contentBtn">View</h3></a>
               </div>
@@ -92,7 +92,7 @@
             <div class="thumbnail">
               <img class="img-fluid" src="img/graphics/TZLance2.svg">
               <div class="details">
-                <h3 class="contentTxtH pad">TZ & Lance Vance</h3>
+                <h3 class="">TZ & Lance Vance</h3>
                 <p class="align1">o Part 1 of 4: Stephen Bliss was the artist that produced the artwork for Grand Theft Auto Vice City. I appropriated some of his pieces, adding my self-portrait to four of the main characters in the game using only the pen tool in Adobe Illustrator.</p>
                 <a href="img/graphics/TZLance2.svg"><h3 class="contentBtn">View</h3></a>
               </div>
@@ -139,7 +139,7 @@
 
   <a href="#" class="scrollToTop"><img class="mr-3 logoForm2" src="img/media/upArrow.svg"></a>
 
- <footer>
+ <footer class="galleryFoot">
     <div class="wrapper">
       <div class="container">
         <div class="row">
@@ -228,6 +228,36 @@
       $('html, body').animate({
           scrollTop : $(this.hash).offset().top
         }, 1500);
+    });
+  </script>
+  <script>
+    $(function() {
+        var $el, leftPos, newWidth,
+            $mainNav = $("#example-one");
+        
+        $mainNav.append("<li id='magic-line'></li>");
+        var $magicLine = $("#magic-line");
+        
+        $magicLine
+            .width($(".current_page_item").width())
+            .css("left", $(".current_page_item a").position().left)
+            .data("origLeft", $magicLine.position().left)
+            .data("origWidth", $magicLine.width());
+            
+        $("#example-one li a").hover(function() {
+            $el = $(this);
+            leftPos = $el.position().left;
+            newWidth = $el.parent().width();
+            $magicLine.stop().animate({
+                left: leftPos,
+                width: newWidth
+            });
+        }, function() {
+            $magicLine.stop().animate({
+                left: $magicLine.data("origLeft"),
+                width: $magicLine.data("origWidth")
+            });    
+        });
     });
   </script>
 
