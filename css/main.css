@@ -248,7 +248,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .homeImg{
-  background-image: url(../img/nyc8.JPG);
+  background-image: url(../img/nyc8.jpg);
   background-attachment: fixed;
 }
 .homeLogo{
@@ -285,7 +285,7 @@ nav ul li a:hover {
 }
 /*Slides for About Page*/
 .slide1{
-  background-image: url(../img/about/TZFence.jpg);
+  background-image: url(../img/about/TZFence.JPG);
   height: 80vh;
 }
 .slide2{
@@ -293,7 +293,7 @@ nav ul li a:hover {
   height: 80vh;
 }
 .slide3{
-  background-image: url(../img/about/TZTeddy.JPG);
+  background-image: url(../img/about/TZTeddy.jpg);
   height: 80vh;
 }
 /*Slides for Ation Icon Logos*/
