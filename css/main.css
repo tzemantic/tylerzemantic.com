@@ -96,6 +96,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+body{
+    background-color: white;
+}
+a:link {
+  text-decoration: none;
+}
+h3{
+  font-family: 'Prosto One', cursive;
+}
+
+
 /*Functions*/
 .center{
   text-align: center;
@@ -103,6 +115,20 @@ textarea {
 .indent{
   text-indent: 50px;
 }
+.align1{
+  width: 80%;
+  padding-top: 10px;
+  text-align: left;
+}
+.noBack{
+  background-color: rgba(0,0,0,0);
+  font-family: 'Prosto One', cursive;
+  color: white;
+}
+.cWhite{
+  color: white;
+}
+
 .font1{
     font-family: montserrat, sans-serif;
     font-weight: 700;
@@ -113,27 +139,27 @@ textarea {
 .font2{
   color: white;
   font-family: 'Prosto One', cursive;
-  /*font-family: 'Hind Vadodara', sans-serif;*/
   font-size: 8vh;
 }
 .font3{
   font-family: 'Prosto One', cursive;
 }
-.size1{
-  font-size: 5vh;
+.font4{
+  font-family: montserrat, sans-serif;
 }
-.align1{
-  width: 80%;
-  padding-top: 10px;
-  text-align: left;
-}
+
 .fontSize{
   font-size: 3vh;
 }
-.graphicForm{
-  width: 30vh;
+.fontSize2{
+  font-size: 2vh;
 }
-/*Footer Logos*/
+
+.size1{
+  font-size: 5vh;
+}
+
+/*Footer media Logos*/
 .logoForm{
   width: 25px;
 }
@@ -141,27 +167,16 @@ textarea {
 .logoForm2{
   width: 35px;
 }
+/*Logos on web page*/
 .logoForm3{
-  width: 45vh;
-}
-.logoForm4{
-  width: 65vh;
+  width: 40vh;
 }
 /*Footer TZ Logo*/
 .logoForm4{
-  width: 20vh;
+  width: 25vh;
 }
-
-
-
-body{
-    background-color: white;
-}
-a:link {
-  text-decoration: none;
-}
-h3{
-  font-family: 'Prosto One', cursive;
+.graphicForm{
+  width: 30vh;
 }
 
 /*NavBar*/
@@ -174,6 +189,7 @@ h3{
   animation-timing-function: ease;
   */
 }
+/*Navbar color - part of fade transition*/
 .nav-bg{
   background: transparent;
 }
@@ -202,11 +218,11 @@ h3{
   font-family: 'Prosto One', cursive;
   font-size: 1.8vh;
 }
-
 .navbar{
   padding: 0;
   margin-top: 2px;
 }
+/*moving line in navbar*/
 #magic-line {
   position: absolute; 
   height: 3px; 
@@ -215,33 +231,18 @@ h3{
   background: white;  
 }
 
-
-/*nav ul li a.active{
+/*Old Nav hover style
+nav ul li a.active{
   border-bottom: 4px solid white;
   border-radius: 5px;
 }
-
-/*
 nav ul li a:hover {
   border-radius: 3px;
   transition: all 0.2s ease;
   transform: scale(1.1);*
 }
 */
-@keyframes fade {
-  0% {
-    background-color: 0, 0, 0, 0;
-  }
-  25% {
-    background-color: rgba(0, 0, 0, 0.0);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
+
 /*Hover effect for social media icons*/
 #mediaLogo img{
   transition: all 0.1s ease;
@@ -250,7 +251,7 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
-/*Formats background image and centers logo*/
+/*Formats background image and centers logo on home page*/
 .home{
     background-color: black;
     background-size: cover;
@@ -262,15 +263,17 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+/*Image for home page*/
 .homeImg{
   background-image: url(../img/nyc8.jpg);
   background-attachment: fixed;
 }
+/*Logo in home page center*/
 .homeLogo{
   width: 70vh;
   z-index: 9;
 }
-
+/*Formating for top of page*/
 .top{
     background-color: black;
     background-size: cover;
@@ -283,6 +286,7 @@ nav ul li a:hover {
     align-items: center;
     padding-right: 3%;
 }
+/*Images for top of the page*/
 .galleryColor{
   background-image: url(../img/topPageImages/galleryColor3.svg);
   background-attachment: fixed;
@@ -295,6 +299,7 @@ nav ul li a:hover {
   background-image: url(../img/topPageImages/aboutColor3.svg);
   background-attachment: fixed;
 }
+/*Gradients for Footers*/
 .galleryFoot{
  background: rgb(43,183,148);
  background: linear-gradient(0deg, rgba(43,183,148,1) 25%, rgba(0,173,255,1) 100%);
@@ -307,6 +312,8 @@ nav ul li a:hover {
   background: rgb(227,56,44);
   background: linear-gradient(0deg, rgba(227,56,44,1) 0%, rgba(240,100,112,1) 84%);
 }
+
+
 .carousel-inner .item img {
   margin: 0 auto;
 }
@@ -354,6 +361,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   margin: 0 auto;
 }
+/*Slides for Layout Page*/
 .slide9{
   background-image: url(../img/layouts/StyleTiles/AtionBrand1.svg);
   height: 100vh;
@@ -371,38 +379,16 @@ nav ul li a:hover {
   background-image: cover;
 }
 
-.pic{
-  width: 100%;
-  transition: 1s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pic:hover{
-  box-shadow: inset 0 0 0 0 rgba(255,255,255,0.75);
-}
-.label{
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-top: 1.5px solid white;
-  border-bottom: 1.5px solid white;
-  transition: 0.4s;
-  font-family: 'Prosto One', cursive;
-}
-.pic:hover .label{
-  font-size: 0px;
-  border: none;
-}
 
+/*Thumbnails for gallery page*/
 .graphicsImg{
-  background: url(../img/thumbnail/graphics.svg);
+  background: url(../img/thumbnail/graphics.png);
   height: 100%;
   width: 100%;
   box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
   transition: all 0.4s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .graphicsImg:hover{
   transform: scale(1.1);
@@ -413,19 +399,56 @@ nav ul li a:hover {
   width: 100%;
   box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
   transition: all 0.4s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .logoImg:hover{
   transform: scale(1.1);
 }
 .layoutImg{
   background: url(../img/thumbnail/layouts.svg);
+  width: 100%;
+  box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.layoutImg:hover{
+  transform: scale(1.1);
+}
+.webImg{
+  background: url(../img/thumbnail/web.svg);
   height: 100%;
   width: 100%;
   box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.webImg:hover{
+  transform: scale(1.1);
+}
+.animationImg{
+  background: url(../img/thumbnail/animation.svg);
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-
-
+}
+.animationImg:hover{
+  transform: scale(1.1);
+}
+.photographyImg{
+  background: url(../img/logos/TZlogo.svg);
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 10px 200px rgba(0, 174, 239, 0.75);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photographyImg:hover{
+  transform: scale(1.1);
+}
 
 
 /*Used for buttons*/
@@ -441,6 +464,7 @@ nav ul li a:hover {
   background-color: #f04c38;
   width: 100%;
 }
+/*About page Resume buttom*/
 .buttonForm2{
   margin: 0 auto;
   border-radius: 3px;
@@ -454,6 +478,7 @@ nav ul li a:hover {
   background-color: #f04c38;
   width: 100%;
 }
+/*Buttons on web page*/
 .buttonForm3{
   margin: 0 auto;
   border-radius: 3px;
@@ -463,6 +488,9 @@ nav ul li a:hover {
   background-color: white;
   background-color: #f04c38;
   width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .btn{
   background-color: black;
@@ -480,7 +508,7 @@ nav ul li a:hover {
   padding: 10px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .contentBtn:hover {
   background-color: black;
@@ -519,6 +547,8 @@ nav ul li a:hover {
   color: black;
   text-decoration: none;
 }
+
+/*For pages within gallery - logos, layouts, graphics, etc.*/
 .thumbnail{
   width: 100%;
   overflow: hidden;
@@ -547,10 +577,52 @@ nav ul li a:hover {
   transition: 0.5s ease;
   text-align:center;
 }
-.noBack{
-  background-color: rgba(0,0,0,0);
-  font-family: 'Prosto One', cursive;
+
+/*For gallery page only*/
+.thumbnail2{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnail2:hover{
+  box-shadow: inset 0 0 0 0 rgba(255,255,255,0.75);
+}
+.thumbnail2:hover .details2{
+  font-size: 0px;
+  border: none;
+}
+.details2{
   color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;*/
+  transition: 0.5s ease;
+  font-family: 'Prosto One', cursive;
+}
+/*Borders within details*/
+.topBord{
+  border-top: 1.5px solid white;
+  padding-top: 50px;
+}
+.bottomBord{
+  border-bottom: 1.5px solid white;
+  padding-bottom: 50px;
+}
+.bothBord{
+  border-top: 1.5px solid white;
+  padding-top: 25px;
+  border-bottom: 1.5px solid white;
+  padding-bottom: 25px;
+  width: 80%
+
 }
 
 
@@ -568,13 +640,11 @@ nav ul li a:hover {
 .scrollToTop:hover{
   transform: scale(1.3);
 }
-/*For Smooth Scrolling in footer logo*/
-
 
 footer{
   background-color: #141414;
   width: 100%;
-  height: 40vh;
+  height: 52vh;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -588,7 +658,6 @@ footer h3{
 footer img{
   width: 8vh;
 }
-
 footer img{
   transition: all 0.2s ease;
 }
@@ -608,7 +677,6 @@ footer img:hover{
     height: 50vh !important;
   }
 }
-
 
 
 /* ==========================================================================
