@@ -243,6 +243,13 @@ nav ul li a:hover {
 }
 */
 
+/*Hover effect for home page logo*/
+#homeLogo img{
+  transition: all 0.5s ease;
+}
+#homeLogo img:hover{
+  transform: scale(1.2);
+}
 /*Hover effect for social media icons*/
 #mediaLogo img{
   transition: all 0.1s ease;
@@ -250,6 +257,7 @@ nav ul li a:hover {
 #mediaLogo img:hover{
   transform: scale(1.2);
 }
+
 
 /*Formats background image and centers logo on home page*/
 .home{
@@ -321,14 +329,17 @@ nav ul li a:hover {
 .slide1{
   background-image: url(../img/about/TZFence.JPG);
   height: 80vh;
+  border-radius: 5px;
 }
 .slide2{
   background-image: url(../img/about/TZHeadshot.jpg);
   height: 80vh;
+  border-radius: 5px;
 }
 .slide3{
   background-image: url(../img/about/TZTeddy.jpg);
   height: 80vh;
+  border-radius: 5px;
 }
 /*Slides for Ation Icon Logos*/
 .slide4{
@@ -499,6 +510,22 @@ nav ul li a:hover {
   background-color: white;
   color: black;
 }
+.btn2{
+  /*background-color: rgb(246,146,30) !important;*/
+  background-color: rgb(241,110, 69) !important;
+}
+.btn2:hover{
+  background-color: white !important;
+  color: black;
+}
+.btn3{
+  /*background-color: rgb(246,146,30) !important;*/
+  background-color: rgb(231,70, 66) !important;
+}
+.btn3:hover{
+  background-color: white !important;
+  color: black;
+}
 /*Thumbnail Button*/
 .contentBtn {
   color: black;
@@ -553,6 +580,7 @@ nav ul li a:hover {
   width: 100%;
   overflow: hidden;
   position: relative;
+  transition: all 0.4s ease;
 }
 .thumbnail:hover img{
   transform: scale(1.1);
@@ -562,6 +590,10 @@ nav ul li a:hover {
 .thumbnail:hover .details{
   height: 100%;
 }
+.thumbnail:hover{
+  transform: scale(1.05);
+} 
+
 .details{
   width: 100%;
   height: 0%;
@@ -622,9 +654,21 @@ nav ul li a:hover {
   border-bottom: 1.5px solid white;
   padding-bottom: 25px;
   width: 80%
-
 }
-
+.bothBordB{
+  border-top: 2px solid #ced4da;
+  padding-top: 25px;
+  width: 100%;
+  border-left: 2px solid #ced4da;
+  border-radius: 5px 0px 0px 0px;
+}
+.bothBordB2{
+  border-top: 2px solid #ced4da;
+  padding-top: 25px;
+  width: 100%;
+  border-right: 2px solid #ced4da;
+  border-radius: 0px 5px 0px 0px;
+}
 
 /*Scroll to top button*/
 .scrollToTop{
@@ -665,6 +709,8 @@ footer img:hover{
   transform: scale(1.2);
 }
 
+
+
 /*For Mobile Phones*/
 @media screen and (max-width: 700px){ 
   .homeLogo{
@@ -676,6 +722,7 @@ footer img:hover{
   .slide10{
     height: 50vh !important;
   }
+
 }
 
 
