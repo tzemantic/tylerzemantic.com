@@ -159,13 +159,13 @@ h3{
   font-size: 5vh;
 }
 
-/*Footer media Logos*/
+/*Navmedia Logos*/
 .logoForm{
-  width: 25px;
-}
-/*Top Social Media Icons*/
-.logoForm2{
   width: 35px;
+}
+/*Footer Social Media Icons*/
+.logoForm2{
+  width: 45px;
 }
 /*Logos on web page*/
 .logoForm3{
