@@ -592,6 +592,7 @@ nav ul li a:hover {
 }
 .thumbnail:hover{
   transform: scale(1.05);
+
 } 
 
 .details{
@@ -639,6 +640,24 @@ nav ul li a:hover {
   transition: 0.5s ease;
   font-family: 'Prosto One', cursive;
 }
+
+/*Logos Pages */
+.thumbnail3{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.thumbnail3:hover img{
+  transform: scale(1.15);
+  transition: 0.45s ease;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.thumbnail3:hover .details{
+  height: 0%;
+}
+
 /*Borders within details*/
 .topBord{
   border-top: 1.5px solid white;
