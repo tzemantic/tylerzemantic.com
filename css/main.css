@@ -377,7 +377,7 @@ nav ul li a:hover {
 }
 /*Slides for About Page*/
 .slide1{
-  background-image: url(../img/about/TZCancun.jpg);
+  background-image: url(../img/about/TZCancun.JPG);
   height: 80vh;
   border-radius: 5px;
 }
@@ -440,7 +440,7 @@ nav ul li a:hover {
   background-image: cover;
 }
 .slide11{
-  background-image: url(../img/about/TZGrad.jpg);
+  background-image: url(../img/about/TZGrad.JPG);
   height: 80vh;
   border-radius: 5px;
 }
