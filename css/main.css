@@ -252,18 +252,14 @@ nav ul li a:hover {
 }
 
 #homeLogo{
-   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: rotate-animation 1.8s ease forwards;
+   animation: rotate-animation 1.8s ease forwards;
 }
 #homeLogo svg{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fil-animation 0.5s ease forwards 1.8s;
+  animation: fil-animation 0.5s ease forwards 1.7s;
 
 }
 #homeLogo path{
@@ -779,8 +775,7 @@ footer img:hover{
 
 /*For Mobile Phones*/
 @media screen and (max-width: 700px){ 
-  .homeLogo{
-    width: 40vh;
+  #homeLogo{
   }
   .slide9{
     height: 50vh !important;
