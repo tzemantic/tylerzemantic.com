@@ -178,6 +178,9 @@ h3{
 .graphicForm{
   width: 30vh;
 }
+.mapW{
+  width: 100%;
+}
 
 /*NavBar*/
 .nav-wrapper {
@@ -374,7 +377,7 @@ nav ul li a:hover {
 }
 /*Slides for About Page*/
 .slide1{
-  background-image: url(../img/about/TZFence.JPG);
+  background-image: url(../img/about/TZCancun.jpg);
   height: 80vh;
   border-radius: 5px;
 }
@@ -384,7 +387,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 .slide3{
-  background-image: url(../img/about/TZTeddy.jpg);
+  background-image: url(../img/about/TZNYC.jpg);
   height: 80vh;
   border-radius: 5px;
 }
@@ -435,6 +438,11 @@ nav ul li a:hover {
   margin: 0 auto;
   background-position: center;
   background-image: cover;
+}
+.slide11{
+  background-image: url(../img/about/TZGrad.jpg);
+  height: 80vh;
+  border-radius: 5px;
 }
 
 
@@ -779,15 +787,12 @@ footer img:hover{
 
 /*For Mobile Phones*/
 @media screen and (max-width: 700px){ 
-  #homeLogo{
-  }
   .slide9{
     height: 50vh !important;
   }
   .slide10{
     height: 50vh !important;
   }
-
 }
 
 
