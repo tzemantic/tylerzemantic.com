@@ -33,7 +33,7 @@
 
    <div class="nav-wrapper nav-bg navTransition" id="nav">
     <div class="container">
-      <nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center">
+      <nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center" role="navigation">
         <a href="index.html" class="navbar-brand"><img src="img/TZLogo.svg" meta name="description" content="Home page" alt="Clickable link that is a Logo with a T and Z connected inside a circle"></a>
         <div id="mediaLogo">
           <a href="https://www.linkedin.com/in/tyler-zemantic-602048167/"><img class="logoForm mr-2" src="img/media/linkedInWC.svg" meta name="description" content="Tyler Zemantic's LinkedIn" alt="LinkedIn cirlce logo with link to Tyler Zemantic's LinkedIn page"></a>
@@ -41,17 +41,19 @@
           <a href="https://www.instagram.com/tyler_zemantic/"><img class="logoForm mr-2" src="img/media/instagramWC.svg" meta name="description" content="Tyler Zemantic's Instagram" alt="Instagram cirlce logo with link to Tyler Zemantic's Instagram page"></a>
           <a href="mailto:zman.tyler@gmail.com"><img class="logoForm" src="img/media/emailWC.svg" meta name="description" content="Email Tyler Zemantic" alt="Email cirlce logo with link to send email to Tyler Zemantic"></a>
         </div>
-        <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse" meta name="description" content="Collapable Navbar Button" alt="Hamburger logo that collapses navbar for mobile devices">
+        <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse" meta name="description" content="Collapable Navbar Button" alt="Hamburger logo that collapses navbar for mobile devices">
           <span class="navbar-toggler-icon" meta name="description" content="Navbar toggle Icon" alt="Clickable Navbar toggle icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-wrap" id="navbarCollapse">
-             <ul class="navbar-nav ml-auto group" id="example-one">
+             <ul class="navbar-nav ml-auto group mb-3 mt-3" id="example-one">
                 <li class="navbar-item current_page_item">
                     <a href="gallery.html" class="nav-link" meta name="description" content="Gallery Page" alt="Clickable Link that brings user to the gallery page">Gallery</a>
                 </li>
+                <hr class="wide1">
                 <li class="navbar-item">
                     <a href="contact.html" class="nav-link" meta name="description" content="Contact Page" alt="Clickable Link that brings user to the contact page">Contact</a>
                 </li>
+                <hr class="wide1">
                 <li class="navbar-item">
                     <a href="about.html" class="nav-link" meta name="description" content="About Page" alt="Clickable Link that brings user to the about page">About</a>
                 </li>
@@ -65,7 +67,7 @@
   <div class="home contactFoot">
     <div class="wrapper" id="homeLogo">
           <!--<a href="gallery.html"><img src="img/TZLogo.svg" class="homeLogo"></a>-->
-          <a href="gallery.html">
+          <a href="gallery.html" meta name="description" content="Link to Gallery" alt="Link that brings user to gallery page">
             <svg width="380" height="380px" viewBox="0 0 358 357" fill="none" xmlns="http://www.w3.org/2000/svg" meta name="description" content="TZ Logo" alt="Animated Logo with a T and Z connected inside a circle">
             <path d="M356.6 175.8C355.1 78.9 275.8 0.5 178.6 0.5C81.4 0.5 2 78.9 0.5 175.8C0.5 176.6 0.5 177.3 0.5 178.1C0.5 178.9 0.5 179.6 0.5 180.4C2 277.3 81.3 355.7 178.6 355.7C275.9 355.7 355.2 277.3 356.7 180.4C356.7 179.6 356.7 178.9 356.7 178.1C356.6 177.4 356.6 176.6 356.6 175.8ZM178.6 18.9C239.9 19 295.7 54.3 322 109.7H35.1C61.4 54.3 117.2 18.9 178.6 18.9ZM178.6 337.4C91.4 337.4 20.5 266.8 19.9 179.8C19.9 179.4 19.9 179.1 19.9 178.7C19.9 178 19.9 177.3 19.9 176.6C20 158.7 23.2 140.9 29.2 124.1H74.4V248.6H124.4V124H265.6L173 232.3C172.7 232.7 172.3 233.1 172 233.4C171.3 234.2 170.7 235 170 235.7C161.7 245.6 159 248.5 159 248.5H321C294.3 302.8 239.1 337.3 178.6 337.4ZM337.3 179.8C337.2 195.7 334.7 211.4 330 226.5H238.2L327 122.3L327.3 122C333.9 139.5 337.3 157.9 337.4 176.6C337.4 177.3 337.4 178 337.4 178.7C337.3 179 337.3 179.3 337.3 179.8Z" stroke="white" stroke-miterlimit="10"/>
             </svg>
@@ -73,6 +75,8 @@
     </div>
   </div>
 </header>
+
+</body>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

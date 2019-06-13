@@ -128,6 +128,12 @@ h3{
 .cWhite{
   color: white;
 }
+/*navbar line*/
+.wide1{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .font1{
     font-family: montserrat, sans-serif;
@@ -182,6 +188,8 @@ h3{
   width: 100%;
 }
 
+
+
 /*NavBar*/
 .nav-wrapper {
   width: 100%;
@@ -199,6 +207,7 @@ h3{
 .show{
   background: rgba(0,0,0,0.7);
 }
+
 .navTransition{    
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -219,12 +228,14 @@ h3{
   margin-right: 2vh;
   padding-left: 5px;
   font-family: 'Prosto One', cursive;
-  font-size: 1.8vh;
+  font-size: 2.5vh;
 }
 .navbar{
   padding: 0;
   margin-top: 2px;
 }
+/*Navbar hamburger to X animation*/
+
 /*moving line in navbar*/
 #magic-line {
   position: absolute; 
@@ -786,13 +797,32 @@ footer img:hover{
 
 
 /*For Mobile Phones*/
-@media screen and (max-width: 700px){ 
+@media screen and (max-width: 990px){ 
   .slide9{
     height: 50vh !important;
   }
   .slide10{
     height: 50vh !important;
   }
+  .navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Prosto One', cursive;
+  font-size: 4vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  background-color: white;
+  color: black;
+  width: 50%;
+  border-radius: 2px;
+  
+}
+.nav-bg{
+  border-radius: 2px;
+}
 }
 
 
