@@ -257,6 +257,7 @@ nav ul li a:hover {
 }
 */
 
+
 /*Hover effect for home page logo*/
 #homeLogo img{
   transition: all 0.5s ease;
@@ -305,6 +306,15 @@ nav ul li a:hover {
   }
   to{
     transform: rotate(0deg);
+  }
+}
+
+@keyframes fade-animation{
+  from{
+    background: transparent;
+  }
+  to{
+    background: rgba(0,0,0,0.7)
   }
 }
 
@@ -820,9 +830,18 @@ footer img:hover{
   border-radius: 2px;
   
 }
-.nav-bg{
-  border-radius: 2px;
+.navbar-collapse{
+  border-radius: 75px;
+  height: 54vh;
+  width: 10vh;
+  margin-top: 15vh;
+  padding-top: 10vh;
+  background-color: rgba(0, 0, 0, 0.9);
 }
+#magic-line{
+  background-color: transparent;
+}
+
 }
 
 
