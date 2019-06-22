@@ -190,6 +190,8 @@ h3{
 .mapW{
   width: 100%;
 }
+/*for flatlands brochure on layout page */
+
 
 
 
@@ -468,6 +470,23 @@ nav ul li a:hover {
   height: 80vh;
   border-radius: 5px;
 }
+.slide12{
+  background-image: url(../img/layouts/FlatlandsFront.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-image: cover;
+}
+.slide13{
+  background-image: url(../img/layouts/FlatlandsBack.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-image: cover;
+}
+
 
 
 /*Thumbnails for gallery page*/
