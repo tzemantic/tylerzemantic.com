@@ -624,6 +624,15 @@ nav ul li a:hover {
   background-color: white !important;
   color: black;
 }
+.btn4{
+  /*background-color: rgb(246,146,30) !important;*/
+  background-color: rgb(5,174,244) !important;
+  width: 100%;
+}
+.btn4:hover{
+  background-color: white !important;
+  color: black;
+}
 /*Thumbnail Button*/
 .contentBtn {
   color: black;
