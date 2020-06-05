@@ -10,7 +10,7 @@
   <meta name="keywords" content="Tyler Zemantic, tyler, zemantic, graphic design, web design, web development, animation, photography, digital media, portfolio, html, css, java script">
   <meta name="author" content="Tyler Zemantic">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="refresh" content="3;URL='gallery.html'"/>
+  <!--<meta http-equiv="refresh" content="3;URL='gallery.html'"/>-->
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -32,7 +32,9 @@
 
 <body>
   
-   <div class="nav-wrapper nav-bg navTransition" id="nav">
+
+  
+   <div class="nav-wrapper nav-bg navTransition" id="main-nav">
     <div class="container">
       <nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center" role="navigation">
         <a href="index.html" class="navbar-brand"><img src="img/TZLogo.svg" meta name="description" content="Home page" alt="Clickable link that is a Logo with a T and Z connected inside a circle"></a>
@@ -46,18 +48,19 @@
           <span class="navbar-toggler-icon" meta name="description" content="Navbar toggle Icon" alt="Clickable Navbar toggle icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-wrap" id="navbarCollapse">
-             <ul class="navbar-nav ml-auto group" id="example-one">
+             <ul class="navbar-nav ml-auto group sticky-shrinknav-menu" id="example-one" id="main-nav">
                 <li class="navbar-item current_page_item">
-                    <a href="gallery.html" class="nav-link" meta name="description" content="Gallery Page" alt="Clickable Link that brings user to the gallery page">Gallery</a>
+                    <a href="#gallery" class="nav-link" meta name="description" content="Gallery Page" alt="Clickable Link that brings user to the gallery">Gallery</a>
                 </li>
                 <hr class="wide1">
                 <li class="navbar-item">
-                    <a href="contact.html" class="nav-link" meta name="description" content="Contact Page" alt="Clickable Link that brings user to the contact page">Contact</a>
+                    <a href="#about" class="nav-link" meta name="description" content="About Page" alt="Clickable Link that brings user to the about">About</a>
                 </li>
                 <hr class="wide1">
                 <li class="navbar-item">
-                    <a href="about.html" class="nav-link" meta name="description" content="About Page" alt="Clickable Link that brings user to the about page">About</a>
+                    <a href="#contact" class="nav-link" meta name="description" content="Contact Page" alt="Clickable Link that brings user to the contact">Contact</a>
                 </li>
+              
             </ul>
         </div>
       </nav>
@@ -65,18 +68,213 @@
   </div>
 
 <header>
-  <div class="home contactFoot">
+  <div class="home galleryFoot">
     <div class="wrapper" id="homeLogo">
-          <!--<a href="gallery.html"><img src="img/TZLogo.svg" class="homeLogo"></a>-->
-          <a href="gallery.html" meta name="description" content="Link to Gallery" alt="Link that brings user to gallery page">
+      
+
+      <!--<div class= "fullscreen-bg">
+        <video muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="img/TZHead.mp4" type="video/webm">
+        </video>
+     </div> -->
+        
+
+         <!--<a href="gallery.html"><img src="img/TZLogo.svg" class="homeLogo"></a>-->
+        <a href="gallery.html" meta name="description" content="Link to Gallery" alt="Link that brings user to gallery page">
             <svg width="380" height="380px" viewBox="0 0 358 357" fill="none" xmlns="http://www.w3.org/2000/svg" meta name="description" content="TZ Logo" alt="Animated Logo with a T and Z connected inside a circle">
             <path d="M356.6 175.8C355.1 78.9 275.8 0.5 178.6 0.5C81.4 0.5 2 78.9 0.5 175.8C0.5 176.6 0.5 177.3 0.5 178.1C0.5 178.9 0.5 179.6 0.5 180.4C2 277.3 81.3 355.7 178.6 355.7C275.9 355.7 355.2 277.3 356.7 180.4C356.7 179.6 356.7 178.9 356.7 178.1C356.6 177.4 356.6 176.6 356.6 175.8ZM178.6 18.9C239.9 19 295.7 54.3 322 109.7H35.1C61.4 54.3 117.2 18.9 178.6 18.9ZM178.6 337.4C91.4 337.4 20.5 266.8 19.9 179.8C19.9 179.4 19.9 179.1 19.9 178.7C19.9 178 19.9 177.3 19.9 176.6C20 158.7 23.2 140.9 29.2 124.1H74.4V248.6H124.4V124H265.6L173 232.3C172.7 232.7 172.3 233.1 172 233.4C171.3 234.2 170.7 235 170 235.7C161.7 245.6 159 248.5 159 248.5H321C294.3 302.8 239.1 337.3 178.6 337.4ZM337.3 179.8C337.2 195.7 334.7 211.4 330 226.5H238.2L327 122.3L327.3 122C333.9 139.5 337.3 157.9 337.4 176.6C337.4 177.3 337.4 178 337.4 178.7C337.3 179 337.3 179.3 337.3 179.8Z" stroke="white" stroke-miterlimit="10"/>
             </svg>
-          </a>
+          
     </div>
   </div>
 </header>
 
+<section id="gallery">
+  <div class="wrapper">
+    <div class="container">
+      <hr class="mt-5">
+      <div class="container mb-5">
+          <div class="row">
+            <div class="col-md space pt-5">
+              <a href="graphics.html" meta name="description" content="Go to Graphics Page" alt="Clickable thumbnail with the word Gallery appearing over Samuel Jackson from Pulp Fiction graphic, color is blue">
+                <div class="graphicsImg thumbnail2">
+                  <div class="details2" >Graphics</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md space pt-5">
+              <a href="logos.html" meta name="description" content="Go to Logos Page" alt="Clickable thumbnail with the word Logos appearing over RIDE typography Logo, color is blue">
+                <div class="logoImg thumbnail2">
+                  <div class="details2">Logos</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md space pt-5">
+              <a href="layouts.html" meta name="description" content="Go to Layouts Page" alt="Clickable thumbnail with the word Layouts appearing over a branded style tile (brand guide), color is blue">
+                <div class="layoutImg thumbnail2">
+                  <div class="details2">Layouts</div>
+                </div>
+              </a>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-md space pt-5">
+              <a href="web.html" meta name="description" content="Go to Web Design Page" alt="Clickable thumbnail with the word Web appearing over an image consisting of HTML and Javascript code, color is blue">
+                <div class="webImg thumbnail2">
+                  <div class="details2">Web</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md space pt-5">
+              <a href="animation.html" meta name="description" content="Go to Animation Page" alt="Clickable thumbnail with the word Animation over a modeling figure, color is blue">
+                <div class="animationImg thumbnail2">
+                  <div class="details2">Animation</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md space pt-5">
+              <a href="photography.html" >
+                <div class="photographyImg thumbnail2">
+                  <div class="details2">Photos</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+         <hr class="mb-5">
+      </div>
+    </div>
+</section>
+
+<section id="about">
+  <div class="wrapper bBlack">
+      <div class="container justify-content-center pb-5">
+        
+        <div class="row">
+          <div class="col-lg pt-5">
+            <div class="wrapper">
+              <div id="demo" class="carousel slide" data-ride="carousel">
+                  <!-- The slideshow -->
+                  <div class="carousel-inner" id="slideshow">
+                      <div class="carousel-item active img-fluid slide1 cover" height="1000px" meta name="description" content="Image of Tyler Zemantic in Cancun">
+                      </div>
+                      <div class="carousel-item img-fluid slide3 cover" height="1000px" meta name="description" content="Image of Tyler Zemantic in NYC"> 
+                      </div>
+                      <div class="carousel-item img-fluid slide11 cover" height="1000px" meta name="description" content="Image of Tyler Zemantic in UConn graduation cap"> 
+                      </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev" meta name="description" content="Left Arrow" alt="Clickable left arrow button to show previous image in slideshow">
+                      <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next" meta name="description" content="Right Arrow" alt="Clickable right arrow button to show previous image in slideshow">
+                      <span class="carousel-control-next-icon"></span>
+                  </a>
+              </div>
+            </div>
+          </div>    
+          <div class="col-lg pt-5 pl-lg-5 d-flex flex-column align-items-center justify-content-center cWhite">
+            <h3 class="center font mb-3 font3">Tyler Zemantic<hr class="noMarg mt-2"></h3>
+            <p class="indent">Tyler Zemantic is recent graduate from the University of Connecticut. He studied Digital Media and Design where. concentrating in digital business strategies. His focus social media marketing. Other strong skills of his are in web and graphic design/development.</p>
+            <p>Tyler Zemantic has strong skills in communication and collaboration. Working in digital media, it is essential for him to be a team player, and to have consistent, clear communication. In the realm of digital marketing, social media is Tyler's biggest strength. By studying trends and analytics, Tyler develops marketing strategies for businesses via their social channels.</p>
+            <p>On his free time Tyler enjoys traveling and being outdoors. Skateboarding and snowboarding have always been passions of his, and a lot of his work is inspired from these interests.</p>
+            <a href="img/Resume_TylerZemantic2020.pdf" meta name="description" content="Tyler Zemantic's resume" alt="Red button with clickable link to Tyler Zemantic's resume in PDF format"><button type="submit" class="btn btn3 btn-primary mt-3 buttonForm2 border">Resume</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="contact">
+<div class="wrapper">
+  <div class="container justify-content-center pb-5">
+    <hr class="mt-5">
+    <div class="row d-flex justify-content-center align-items-start">
+      <div class="col-md mt-3 contactForm order-2 mb-5">
+            <form action="https://formspree.io/zman.tyler@gmail.com" method="POST">
+              <label for="name" meta name="description" content="Name on Email" alt="Section for typing your name for email">Your Name:</label>
+              <input type="name" name="name" id="name" placeholder="Enter Name" class="form-control">
+              <label class="pt-2" for="email" meta name="description" content="Email Address" alt="Section for typing your email address">Your Email:</label>
+              <input type="email" name="email" id="email" placeholder="Enter Email" class="form-control">
+              <label class="pt-2" for="message" meta name="description" content="Email Message" alt="Section for typing in the message you want to email">Your Message:</label>
+              <textarea name="message" id="message" placeholder="Enter Message" class="form-control" style="height:200px"></textarea>
+              <button type="submit" class="btn btn3 btn-primary border mt-2" style="width:100%" meta name="description" content="Send Email" alt="Clickable button to send email">Send</button>
+            </form>
+      </div>    
+      <div class="col-md mt-3">
+        <div class="row">
+          <div class="col-md mr-md-2 mb-0 pb-0">
+            <h2 class="pt-3 pb-3 center font3">Tyler Zemantic</h2>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-md">
+              <a href="mailto:zman.tyler@gmail.com"><button type="submit" class="btn btn3 btn-primary buttonForm border" meta name="description" content="Tyler Zemantic's email" alt="Red button with clickable link to send email">zman.tyler@gmail.com</button></a>
+          </div>
+          <div class="col-md">
+              <a href="https://www.linkedin.com/in/tyler-zemantic-602048167/"><button type="submit" class="btn btn3 btn-primary buttonForm border"  meta name="description" content="Tyler Zemantic's LinkedIn" alt="Red button with clickable link to Tyler Zemantic's email page">LinkedIn</button></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+              <a href="https://www.facebook.com/tyler.zemantic"><button type="submit" class="btn btn3 btn-primary buttonForm border" meta name="description" content="Tyler Zemantic's Facebook" alt="Red button with clickable link to Tyler Zemantic's Facebook page">Facebook</button></a>
+          </div>
+           <div class="col-md">
+              <a href="https://www.instagram.com/tyler_zemantic/"><button type="submit" class="btn btn3 btn-primary buttonForm border" meta name="description" content="Tyler Zemantic's Instagram" alt="Red button with clickable link to Tyler Zemantic's Instagram page">Instagram</button></a>
+          </div>
+        </div>
+        <!--<div class="row">
+          <div class="col-md">
+              <a href="https://twitter.com/tzemantic"><button type="submit" class="btn btn3 btn-primary buttonForm border">Twitter</button></a>
+          </div>
+           <div class="col-md">
+              <a href="https://www.pinterest.com/tylerzemantic/"><button type="submit" class="btn btn3 btn-primary buttonForm border">Pinterest</button></a>
+          </div>
+        </div>-->
+        <div class="row mt-2">
+          <div class="col-md">
+            <iframe class="mapW" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47614.45020161132!2d-72.71510631026126!3d41.765746152793305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xcc8e4aa8e97d5999!2sHartford%2C+CT!5e0!3m2!1sen!2sus!4v1559869978507!5m2!1sen!2sus" height="200" frameborder="0" style="border:0" allowfullscreen meta name="description" content="Tyler Zemantic's Location" alt="Embeded Google Map of Hartford, Connecticut"></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+  <hr>
+</div>
+</div>
+</section>
+
+  <a href="#" class="scrollToTop"><img class="mr-3 logoForm2" src="img/media/upArrow.svg" meta name="description" content="Up Arrow" alt="Circle with up arrow, clickable and brings user to top of the webpage"></a>
+
+  <footer class="galleryFoot">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col d-flex justify-content-center align-items-center">
+            <a href="#" class="scroll2"><img class="img-fluid logoForm4" src="img/TZLogo.svg" meta name="description" content="TZ Logo" alt="Logo with a T and Z connected inside a circle, clickable and brings user to top of the webpage"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center pt-4">
+            <a href="https://www.linkedin.com/in/tyler-zemantic-602048167/"><img class="logoForm2" src="img/media/linkedInWC.svg" meta name="description" content="Tyler Zemantic's LinkedIn" alt="LinkedIn cirlce logo with link to Tyler Zemantic's LinkedIn page"></a>
+            <!--<a href="tel:1-203-246-3871"><img class="logoForm mr-2" src="img/media/phoneW.svg"></a>-->
+            <a href="https://www.instagram.com/tyler_zemantic/"><img class="logoForm2 ml-3" src="img/media/instagramWC.svg" meta name="description" content="Tyler Zemantic's Instagram" alt="Instagram cirlce logo with link to Tyler Zemantic's Instagram page"></a>
+            <a href="mailto:zman.tyler@gmail.com"><img class="logoForm2 img-fluid ml-3" src="img/media/emailWC.svg" meta name="description" content="Email Tyler Zemantic" alt="Email cirlce logo with link to send email to Tyler Zemantic"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col pt-4 d-flex justify-content-center">
+              <h3 class="font3 size1">Tyler Zemantic</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col pb-2 d-flex justify-content-center">
+              <p class="font3 cWhite fontSize2 font4">Multimedia Design & Marketing</p>
+          </div>
+        </div>
+       </div>
+      </div>
+  </footer>
 </body>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -97,6 +295,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <script>
     $(function() {
         var $el, leftPos, newWidth,
@@ -132,8 +331,74 @@
       for(let i = 0; i<homeLogo.length; i++){
         console.log(`Letter ${i} is ${homeLogo[i].getTotalLength()}`);
       }
-
   </script>
-</body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        //Button Fade in
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 200){
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+        //Smooth Scrolling to Top
+          $('.scrollToTop').click(function(){
+              $('html,body').animate({scrollTop: 0})
+          })
 
+    });
+  </script>
+
+  <script type="text/javascript">
+       $(window).scroll(function() {
+    // 100 = The point you would like to fade the nav in.
+        if ($(window).scrollTop() > 80 ){
+          $('.nav-bg').addClass('show');
+        }else {
+          $('.nav-bg').removeClass('show');
+      };    
+    });
+    $('.scroll').on('click', function(e){   
+        e.preventDefault()
+      $('html, body').animate({
+          scrollTop : $(this.hash).offset().top
+        }, 1500);
+    });
+  </script>
+
+  <script>
+  $(function() {
+  $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 30) {
+      $("body").addClass("sticky-shrinknav-wrapper");
+    } else{
+      $("body").removeClass("sticky-shrinknav-wrapper");
+    }
+  });
+});
+</script>
+<script>
+  $(document).ready(function() {
+  $('#main-nav li a').click(function(e) {
+        
+    e.preventDefault();
+  });
+});
+</script>
+<script>
+  $(document).ready(function() {
+  $('#main-nav li a').click(function(e) {
+    
+    var targetHref = $(this).attr('href');
+    
+  $('html, body').animate({
+    scrollTop: $(targetHref).offset().top
+  }, 1000);
+    
+    e.preventDefault();
+  });
+});
+</script>
 </html>

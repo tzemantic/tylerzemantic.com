@@ -128,6 +128,9 @@ h3{
 .cWhite{
   color: white;
 }
+.bBlack{
+  background-color: black;
+}
 /*navbar line*/
 .wide1{
   width: 50%;
@@ -264,11 +267,20 @@ nav ul li a:hover {
 
 
 /*Hover effect for home page logo*/
-#homeLogo img{
+#homeLogo svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: all 0.5s ease;
 }
-#homeLogo img:hover{
-  transform: scale(1.2);
+
+#homeLogo svg:hover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 #homeLogo{
@@ -291,6 +303,7 @@ nav ul li a:hover {
   stroke-dashoffset: 785;
   animation: lin-animation 1.8s ease forwards;
 }
+
 @keyframes lin-animation{
   to{
     stroke-dasharray: 1293;
@@ -323,13 +336,35 @@ nav ul li a:hover {
   }
 }
 
-/*Page transitions*/
-
-
-#homeLogo svg:hover{
-  
+@keyframes fade-out{
+  from{
+    background: rgba(0,0,0,0.7);
+  }
+  to{
+    background: transparent;
+  }
 }
-/*Hover effect for social media icons*/
+
+.fullscreen-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 #mediaLogo img{
   transition: all 0.1s ease;
 }
@@ -340,13 +375,13 @@ nav ul li a:hover {
 
 /*Formats background image and centers logo on home page*/
 .home{
-    background-color: black;
+   background-color: black;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
     display: flex;
-    /*flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;*/
 }
@@ -621,7 +656,7 @@ nav ul li a:hover {
 }
 .btn3{
   /*background-color: rgb(246,146,30) !important;*/
-  background-color: rgb(231,70, 66) !important;
+  background-color: rgb(5,174,244) !important;
 }
 .btn3:hover{
   background-color: white !important;
