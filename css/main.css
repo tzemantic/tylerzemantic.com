@@ -896,6 +896,9 @@ footer img:hover{
   .slide10{
     height: 50vh !important;
   }
+  .show{
+  background: rgba(0,0,0,0);
+}
   .navbar-light .navbar-nav .nav-link {
   color: white;
   margin: 0 auto;
@@ -913,8 +916,8 @@ footer img:hover{
   
 }
 .navbar-collapse{
-  border-radius: 75px;
-  height: 40vh;
+  border-radius: 30px;
+  height: 50vh;
   width: 10vh;
   margin-top: 15vh;
   padding-top: 3vh;
