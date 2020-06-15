@@ -129,7 +129,10 @@ h3{
   color: white;
 }
 .bBlack{
-  background-color: black;
+  background-color: #161616;
+}
+.bBlue{
+  background-color: #03356B;
 }
 /*navbar line*/
 .wide1{
@@ -252,6 +255,7 @@ h3{
   margin-left: 3px;
   background: white;  
 }
+
 
 /*Old Nav hover style
 nav ul li a.active{
@@ -426,6 +430,9 @@ nav ul li a:hover {
  background: rgb(43,183,148);
  background: linear-gradient(0deg, rgba(43,183,148,1) 25%, rgba(0,173,255,1) 100%);
 }
+.galleryFoot2{
+  background: #03356B;
+}
 .contactFoot{
   background: rgb(246,146,30);
   background: linear-gradient(0deg, rgba(246,146,30,1) 0%, rgba(240,99,81,1) 63%);
@@ -524,6 +531,12 @@ nav ul li a:hover {
   background-position: center;
   background-image: cover;
 }
+.slide1{
+  background-image: url(../img/about/TZColombia.JPG);
+  height: 80vh;
+  border-radius: 5px;
+}
+
 
 
 
