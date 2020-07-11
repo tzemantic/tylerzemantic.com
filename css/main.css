@@ -160,7 +160,7 @@ h3{
 .font4{
   font-family: montserrat, sans-serif;
 }
-.font4{
+.font6{
   font-family: 'Prosto One', cursive;
 }
 
@@ -905,9 +905,7 @@ footer img:hover{
   .slide10{
     height: 50vh !important;
   }
-  .show{
-  background: rgba(0,0,0,0);
-}
+
   .navbar-light .navbar-nav .nav-link {
   color: white;
   margin: 0 auto;
